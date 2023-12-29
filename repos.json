@@ -2,38 +2,38 @@
   {
     "kernelSource": {
       "name": "VantomKernelKSU",
-      "repo": "https://github.com/vantoman/kernel_xiaomi_sm6150",
+      "repo": "https://github.com/PixelOS-Devices/kernel_xiaomi_sm6150",
       "branch": "14",
       "device": "toco",
       "defconfig": "toco_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
-      {
-        "repo": "https://gitlab.com/PixelOS-Devices/playgroundtc",
-        "branch": "17",
-        "name": "clang-playground",
-        "binPath": ["./bin"]
-      }
-    ],
-    "ccache": true,
+  {
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "name": "proton-clang",
+    "binPath": ["./bin"]
+  }
+],
+  "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "clang-playground/bin/clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "clang-playground/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang-playground/bin/arm-linux-gnueabi-",
-        "LD": "clang-playground/bin/ld.lld",
-        "AR": "clang-playground/bin/llvm-ar",
-        "NM": "clang-playground/bin/llvm-nm",
-        "OBJCOPY": "clang-playground/bin/llvm-objcopy",
-        "OBJDUMP": "clang-playground/bin/llvm-objdump",
-        "READELF": "clang-playground/bin/llvm-readelf",
-        "OBJSIZE": "clang-playground/bin/llvm-size",
-        "STRIP": "clang-playground/bin/llvm-strip",
-        "LDGOLD": "clang-playground/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "clang-playground/bin/llvm-ar",
-        "LLVM_DIS": "clang-playground/bin/llvm-dis"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
