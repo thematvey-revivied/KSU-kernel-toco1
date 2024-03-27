@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "VantomKernel-KSU",
-      "repo": "https://github.com/PixelOS-Devices/kernel_xiaomi_sm6150",
-      "branch": "fourteen",
+      "repo": "https://github.com/xiaomi-sm6150/android_kernel_xiaomi_sm6150",
+      "branch": "lineage-21",
       "device": "toco",
       "defconfig": "toco_defconfig"
     },
